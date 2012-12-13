@@ -12,6 +12,11 @@ snippet fn
 	[#]_
 	
 	.. [#] ${1:footnote}
+# hyperlink
+snippet lnk
+	\`${1:link-name}\`_
+	
+	.. _\`$1\`: ${2:link-url}
 # page break
 snippet pb
 	.. raw:: pdf
@@ -32,3 +37,6 @@ snippet docinfo
 snippet hr
 	-----
 	
+# contents
+snippet toc
+	.. contents::
